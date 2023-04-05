@@ -10,7 +10,7 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'plugin:@typescript-eslint/recommended',
     'airbnb',
-    'airbnb-typescript/base'
+    'airbnb-typescript/base',
   ],
   ignorePatterns: ["react-app-env.d.ts", ".eslintrc.js"],
   settings: {
@@ -61,5 +61,7 @@ module.exports = {
     'no-param-reassign': 0,
     'jsx-a11y/no-static-element-interactions': 0,
     'jsx-a11y/click-events-have-key-events': 0,
+    "semi": [2, 'never'],
+    "@typescript-eslint/semi": "off"
   },
 };
