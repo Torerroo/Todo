@@ -47,6 +47,13 @@ module.exports = {
         tsx: 'never',
       },
     ],
+    'react/function-component-definition': [
+      2,
+      {
+        namedComponents: ['arrow-function', 'function-declaration'],
+        unnamedComponents: 'arrow-function',
+      },
+    ],
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
     "import/prefer-default-export": 0,
     'linebreak-style': 0,
@@ -62,6 +69,6 @@ module.exports = {
     'jsx-a11y/no-static-element-interactions': 0,
     'jsx-a11y/click-events-have-key-events': 0,
     "semi": [2, 'never'],
-    "@typescript-eslint/semi": "off"
+    "@typescript-eslint/semi": "off",
   },
 };
