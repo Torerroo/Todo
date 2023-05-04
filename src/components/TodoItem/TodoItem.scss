@@ -1,0 +1,12 @@
+.todoitem {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.todoitem span {
+  display: flex;
+  gap: 10px;
+}
+.text__line-through {
+  text-decoration: line-through;
+}

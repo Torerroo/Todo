@@ -37,7 +37,7 @@ export const AddNewTodo = () => {
         <div>
           <input type="text" placeholder="title..." value={title} onChange={changeTitleHandler} className="addNewTodo__input" />
         </div>
-        <button type="submit" onClick={toasterHandler} className="addNewTodo__button">Append</button>
+        <button type="submit" onClick={toasterHandler} className="addNewTodo__button btn btn-info">Append</button>
         <Toaster
           position="bottom-right"
           reverseOrder

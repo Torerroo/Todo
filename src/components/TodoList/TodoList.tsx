@@ -21,7 +21,7 @@ export const TodoList: FC = () => {
           (todo, index: number) => <TodoItem key={todo.id} {...todo} index={index} />,
         )}
       </ul>
-      <button type="button" onClick={clearHandler}>Clear all</button>
+      <button type="button" className="btn btn-danger" onClick={clearHandler}>Clear all</button>
     </div>
   )
 }

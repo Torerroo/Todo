@@ -1,0 +1,19 @@
+.todoList__container {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 20px;
+  min-width: 500px;
+}
+.todoList__container ul {
+  list-style-type: none;
+  text-align: left;
+  padding-left: 10px;
+}
+.todoList__container > button {
+  width: 100px;
+  align-self: center;
+  font-size: 20px;
+}

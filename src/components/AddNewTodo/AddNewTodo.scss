@@ -1,5 +1,5 @@
 .addNewTodo__container {
-  width: 500px;
+  min-width: 500px;
   & form {
     display: flex;
     flex-direction: column;
@@ -17,10 +17,5 @@
 }
 .addNewTodo__button {
   font-size: 24px;
-  background-color: white;
-  border-radius: 8px;
-  cursor: pointer;
-  &:hover {
-    background-color: rgb(231, 231, 231);
-  }
+  padding-top: 0px;
 }
