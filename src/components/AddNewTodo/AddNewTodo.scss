@@ -1,0 +1,26 @@
+.addNewTodo__container {
+  width: 500px;
+  & form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.addNewTodo__input {
+  width: 300px;
+  height: 35px;
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 0px 10px;
+}
+.addNewTodo__button {
+  font-size: 24px;
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(231, 231, 231);
+  }
+}

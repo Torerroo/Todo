@@ -1,14 +1,12 @@
-import { AddNewTodo } from '../AddNewTodo/AddNewTodo'
+import { Outlet } from 'react-router-dom'
 import { Header } from '../Header/Header'
-import { TodoList } from '../TodoList/TodoList'
 import './App.scss'
 
 export function App() {
   return (
     <div className="App">
       <Header />
-      <AddNewTodo />
-      <TodoList />
+      <Outlet />
     </div>
   )
 }

@@ -3,6 +3,7 @@ import { useAppDispatch } from '../../hooks/useAppDispatch'
 import { useAppSelector } from '../../hooks/useAppSelector'
 import { clearTodos, getAllTodosSelector } from '../../redux/slices/todosSlice'
 import { TodoItem } from '../TodoItem/TodoItem'
+import './TodoList.scss'
 
 export const TodoList: FC = () => {
   const todos = useAppSelector(getAllTodosSelector)
@@ -14,11 +15,13 @@ export const TodoList: FC = () => {
   }
 
   return (
-    <>
+    <div className="todoList__container">
       <ul>
-        {todos.map((todo, index) => <TodoItem key={todo.id} {...todo} index={index} />)}
+        {todos.map(
+          (todo, index: number) => <TodoItem key={todo.id} {...todo} index={index} />,
+        )}
       </ul>
       <button type="button" onClick={clearHandler}>Clear all</button>
-    </>
+    </div>
   )
 }

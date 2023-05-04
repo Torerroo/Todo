@@ -1,12 +1,16 @@
 import { configureStore } from '@reduxjs/toolkit'
-import { initState } from './initState'
+import { getInitStateFromLS } from './initState'
 import { todosReducer } from './slices/todosSlice'
 
 export const store = configureStore({
   reducer: {
     todos: todosReducer,
   },
-  preloadedState: initState,
+  preloadedState: getInitStateFromLS(),
+})
+
+store.subscribe(() => {
+  window.localStorage.setItem('TodoList', JSON.stringify(store.getState()))
 })
 
 export type RootState = ReturnType<typeof store.getState>

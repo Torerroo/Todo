@@ -1,0 +1,33 @@
+.header {
+  background-color: rgb(170, 170, 170);
+  width: 100%;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 100px;
+    height: 120px;
+  }
+}
+.header__container-title {
+  font-size: 36px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.header__container-menu {
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  &:hover {
+    color: rgb(190, 46, 46);
+  }
+  &-active {
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(190, 46, 46);
+    font-weight: 400;
+  }
+}
+

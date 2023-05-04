@@ -4,8 +4,13 @@ interface InitialReduxState {
   todos: Todo[]
 }
 
-export const getInitState = (): InitialReduxState => ({
+const getInitState = (): InitialReduxState => ({
   todos: [],
 })
 
 export const initState = getInitState()
+
+export const getInitStateFromLS = () => {
+  const dataFromLS = window.localStorage.getItem('TodoList')
+  return dataFromLS ? JSON.parse(dataFromLS) : initState
+}
