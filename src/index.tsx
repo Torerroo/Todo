@@ -29,6 +29,7 @@ const router = createBrowserRouter(
       ],
     },
   ],
+  { basename: '/TodoList' },
 )
 
 root.render(
