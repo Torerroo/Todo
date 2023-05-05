@@ -6,9 +6,9 @@ import './Header.scss'
 export const Header: FC = () => (
   <div className="header">
     <div className="header__container">
-      <Link to="/" className="header__container-title">Let's do</Link>
+      <Link to="./" className="header__container-title">Let's do</Link>
       <NavLink
-        to="todolist"
+        to="./todolist"
         className={({ isActive }) => (isActive ? 'header__container-menu-active' : 'header__container-menu')}
       >
         TodoList
