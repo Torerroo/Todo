@@ -29,7 +29,7 @@ const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: '/TodoList' },
+  // { basename: '/TodoList' },
 )
 
 root.render(

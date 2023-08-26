@@ -1,6 +1,3 @@
-/* eslint-disable react/no-unused-prop-types */
-/* eslint-disable react/require-default-props */
-/* eslint-disable no-unused-vars */
 import { FC, ReactNode, useEffect } from 'react'
 import { createPortal } from 'react-dom'
 import './Modal.scss'

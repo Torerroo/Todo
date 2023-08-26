@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import { FC } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import './Header.scss'
